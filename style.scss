@@ -1,8 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Dosis&display=swap');
 
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 90);
+  height: 100vh;
+}
 main {
-  table {
-    th, td {
-      border-bottom: 1px solid black;
+  width: 60%;
+  margin-inline: auto;
+  margin-top: 30px;
+  h2 {
+    font-size: 2.5rem;
+  }
+  #stock-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    table {
+      font-size: 22px;
+      width: 45%;
+      border-spacing: 0;
+      tr {
+        vertical-align: bottom;
+        height: 50px;
+        th, td {
+          border-bottom: 1px solid rgb(255, 255, 255);
+        }
+        th {
+          letter-spacing: .5px;
+          text-align: left;
+        }
+        td {
+          text-align: right;
+          letter-spacing: -1px;
+          font-family: 'ABeeZee', sans-serif;
+        }
+      }
     }
   }
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
 }

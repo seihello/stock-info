@@ -1,3 +1,53 @@
-main table th, main table td {
-  border-bottom: 1px solid black;
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Dosis&display=swap");
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 90);
+  height: 100vh;
+}
+
+main {
+  width: 60%;
+  margin-inline: auto;
+  margin-top: 30px;
+}
+main h2 {
+  font-size: 2.5rem;
+}
+main #stock-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main #stock-info table {
+  font-size: 22px;
+  width: 45%;
+  border-spacing: 0;
+}
+main #stock-info table tr {
+  vertical-align: bottom;
+  height: 50px;
+}
+main #stock-info table tr th, main #stock-info table tr td {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+main #stock-info table tr th {
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+main #stock-info table tr td {
+  text-align: right;
+  letter-spacing: -1px;
+  font-family: "ABeeZee", sans-serif;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

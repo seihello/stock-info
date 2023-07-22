@@ -45,26 +45,36 @@ if ($data && isset($data['data'])) {
   </header>
   <main>
     <h2><?php echo $symbol; ?></h2>
-    <table>
-      <tr>
-        <th>Last Trade</th>
-        <td><?php echo $last; ?></td>
-        <th>Day's High</th>
-        <td><?php echo $high; ?></td>
-      </tr>
-      <tr>
-        <th>Previous Close</th>
-        <td><?php echo $close; ?></td>
-        <th>Day's Low</th>
-        <td><?php echo $low; ?></td>
-      </tr>
-      <tr>
-        <th>Open</th>
-        <td><?php echo $open; ?></td>
-        <th>Volume</th>
-        <td><?php echo $volume; ?></td>
-      </tr>
-  </table>
+    <div id="stock-info">
+      <table>
+        <tr>
+          <th>Last Trade</th>
+          <td><?php echo $last; ?></td>
+        </tr>
+        <tr>
+          <th>Previous Close</th>
+          <td><?php echo $close; ?></td>
+        </tr>
+        <tr>
+          <th>Open</th>
+          <td><?php echo $open; ?></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>Day's High</th>
+          <td><?php echo $high; ?></td>
+        </tr>
+        <tr>
+          <th>Day's Low</th>
+          <td><?php echo $low; ?></td>
+        </tr>
+        <tr>
+          <th>Volume</th>
+          <td><?php echo $volume; ?></td>
+        </tr>
+      </table>
+    </div>
 
   </main>
   <footer>
